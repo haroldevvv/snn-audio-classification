@@ -6,28 +6,28 @@ This project classifies short audio clips (≤ 5 seconds) into 10 urban sound ca
 
 ---
 
-##  Features
+## Features
 
--  Upload WAV audio files and get instant predictions
--  Spiking Neural Network (SNN) for temporal audio modeling
--  MFCC feature extraction using Librosa
--  Spike encoding for biologically inspired processing
--  Confidence score using softmax probabilities
--  Deployable via Streamlit Cloud
+-  Upload WAV audio files and get instant predictions  
+-  Spiking Neural Network (SNN) for temporal audio modeling  
+-  MFCC feature extraction using Librosa  
+-  Spike encoding for biologically inspired processing  
+-  Confidence score using softmax probabilities  
+-  Deployable via Streamlit Cloud  
 
 ---
 
-##  Model Overview
+## Model Overview
 
 The model is a **3-layer fully connected Spiking Neural Network**:
 
-- Input: MFCC features (40 coefficients)
-- Hidden Layers:
-  - FC (256) + Leaky LIF
-  - FC (128) + Leaky LIF
-- Output:
-  - FC (10 classes) + Leaky LIF
-- Output spikes are summed across time for classification
+- **Input:** MFCC features (40 coefficients)  
+- **Hidden Layers:**
+  - FC (256) + Leaky LIF  
+  - FC (128) + Leaky LIF  
+- **Output:**
+  - FC (10 classes) + Leaky LIF  
+- Output spikes are summed across time for classification  
 
 ---
 
@@ -35,34 +35,34 @@ The model is a **3-layer fully connected Spiking Neural Network**:
 
 - **UrbanSound8K**
 - 10 sound classes:
-  - Air Conditioner
-  - Car Horn
-  - Children Playing
-  - Dog Bark
-  - Drilling
-  - Engine Idling
-  - Gunshot
-  - Jackhammer
-  - Siren
-  - Street Music
+  - Air Conditioner  
+  - Car Horn  
+  - Children Playing  
+  - Dog Bark  
+  - Drilling  
+  - Engine Idling  
+  - Gunshot  
+  - Jackhammer  
+  - Siren  
+  - Street Music  
 
 ---
 
 ## Installation
 
-Clone the repository:
-```bash
-git clone https://github.com.haroldevvv/snn-audio-classification.git
+### 1. Clone the repository
+git clone https://github.com/haroldevvv/snn-audio-classification.git
 cd snn-audio-classification
 
-Install dependencies:
-```bash
+### 2. Install dependencies
 pip install -r requirements.txt
 
-Run locally:
-```bash
+### 3. Run locally
 streamlit run app.py
 
 ## Developer
+Harold Salvador
 
-Harold M. Salvador
+```bash
+git clone https://github.com/haroldevvv/snn-audio-classification.git
+cd snn-audio-classification
