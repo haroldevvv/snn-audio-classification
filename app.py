@@ -129,7 +129,7 @@ def predict(file):
 
 
 st.title("🔊 SNN Audio Classification")
-
+st.markdown("A **Spiking Neural Network (SNN)** is a brain-inspired model that processes information as discrete spikes over time, making it well-suited for capturing temporal patterns in data such as audio.")
 uploaded_file = st.file_uploader("Upload a WAV file (≤ 5 sec)", type=["wav"])
 
 if uploaded_file:
