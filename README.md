@@ -54,14 +54,17 @@ The model is a **3-layer fully connected Spiking Neural Network**:
 ```bash
 git clone https://github.com/haroldevvv/snn-audio-classification.git
 cd snn-audio-classification
+```
 
 ### 2. Install dependencies
 ```bash
 pip install -r requirements.txt
+```
 
 ### 3. Run locally
 ```bash
 streamlit run app.py
+```
 
 ## Developer
 Harold Salvador
